@@ -1,12 +1,13 @@
-# Example102 - Math Operations
+# Example102: Math Operations
 
-This repository implements basic math operations (addition and subtraction) with corresponding test cases and CI workflow metadata.
+This repository provides simple math operations (addition and subtraction) with production-ready pytest test cases and a CI integration structure.
 
-## Structure
+## Folder Structure
 
-- `src/`: Contains production Python code.
-- `tests/`: Contains pytest-based test files.
-- `default/`: Contains documentation, workflow metadata, and requirements.
+- `src/`: Source code for math operations
+- `tests/`: Pytest test cases
+- `default/requirements.txt`: Python dependencies
+- `default/math.json`: Workflow metadata for CI/CD
 
 ## Usage
 
@@ -19,6 +20,12 @@ This repository implements basic math operations (addition and subtraction) with
    pytest tests/
    ```
 
-## CI Workflow
+## CI/CD Workflow
+- The workflow file is located at `.github/workflows/ci.yml`.
+- Tests are run automatically on push to `Feature1` branch or PR to `main`.
 
-Workflow metadata is available in `default/math.json` for automated pipeline generation.
+## Python Version
+- Requires Python 3.10
+
+---
+See `default/math.json` for workflow and job metadata.
